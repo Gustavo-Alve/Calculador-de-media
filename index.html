@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <body>
+
+        <div class="container">
+
+            <div class="content">
+                <div class="nome">
+                    <p>Nome do aluno</p>
+                    <input id="name" type="text" required>
+                    
+                </div>
+                
+                <div class="input-field">
+                    <p>Nota 1° Bimestre</p>
+                    <input id="nota1" type="number" required step="0.01" >
+                        
+                    <p>Nota 2° Bimestre</p>
+                    <input id="nota2" type="number"step="0.01" required>
+        
+                    <p>Nota 3° Bimestre</p>
+                    <input id="nota3" type="number" step="0.01" required>
+        
+                    <p>Nota 4° Bimestre </p>
+                    <input id="nota4" type="number" step="0.01" required>
+
+                </div>
+    
+                <button onclick="send()">Calcular</button>
+            </div>
+        </div>
+
+        <div class="respostas">
+            <h1 id="output-name"></h1>
+            <h3 id="output-nota"></h3>
+            <h4 id="output-aprovado"></h4>
+        </div>
+
+
+
+        
+        <script src="./script.js"></script>
+    </body>
+</html>
